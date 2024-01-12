@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kasidech Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@200&display=swap" rel="stylesheet">
+    <script>
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7061777328341371"
+      crossorigin="anonymous"
+    ></script>
+    <!--สคริปต์ที่โหลดจาก Google AdSense เพื่อใช้ในการแสดงโฆษณาบนเว็บไซต์
+        crossorigin="anonymous" คือ คุณลักษณะ ที่ใช้กำหนดว่าเราต้องการให้รีเควสสำหรับแหล่งข้อมูลที่ระบุในแท็ก
+        <script> หรือ <link> นั้นเป็น Cross-origin request 
+        (หมายถึงการทำร้องขอข้อมูลหรือทราบข้อมูลจากแหล่งที่มีเกี่ยวข้องกันแต่อยู่ในเว็บไซต์หรือโดเมนที่แตกต่างกัน)โดยเฉพาะ 
+        กล่าวคือ เราต้องการแหล่งข้อมูลจากโดเมนอื่น (origin) ที่แตกต่างกับโดเมนปัจจุบันของเว็บไซต์เรา-->
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--ระบุว่าเว็บไซต์นี้เหมาะสมที่สุดกับ Internet Explorer เวอร์ชันล่าสุด-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--กำหนดขนาดของหน้าจอเพื่อให้เว็บไซต์ปรับแสดงผลอัตโนมัติให้เหมาะสมกับอุปกรณ์ที่ใช้งาน-->
+
+    <title>Kasidech Glinpoglub Portfolio</title>
+    
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <!--เชื่อมโยงไฟล์ css ชื่อ style.css เข้ากับตัว web เพื่อใช้ style กับ website-->
+
+    <script
+      src="https://kit.fontawesome.com/31e88c46a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--เรียกใช้ไลบรารี Font Awesome เพื่อให้สามารถใช้ไอคอนที่มีอยู่ในไบนารี่ได้-->
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" width="150" height="auto" />
+          <ul id="sidemenu">
+            <li>
+              <a href="#header"><h2>Home</h2></a>
+            </li>
+            <li>
+              <a href="#about"><h2>About Me</h2></a>
+            </li>
+
+            <li>
+              <a href="#myproject"><h2>Project</h2></a>
+            </li>
+            <li>
+              <a href="#contact"><h2>Contact</h2></a>
+            </li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="headertext">
+          <p></p>
+          <h1>
+            สวัสดีครับ ผมชื่อ นายกษิดิ์เดช กลิ่นโพธิ์กลับ <br />
+            จาก โรงเรียนรัตนราษฎร์บำรุง<br />อยากเข้าศึกษาต่อใน <span>ศิลปศาสตร์และวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ (ภาคพิเศษ)</span><span1> KU KPS</span1>
+          </h1>
+          
+        </div>
+      </div>
+    </div>
+    <!--about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about1">
+            <br>
+            <img src="images/Myabout1.png" width="10" height="520" />
+          </div>
+          <div class="about2">
+            <h1 class="sub">About Me</h1>
+            <p1>
+              ผมชื่อ กษิดิ์เดช กลิ่นโพธิ์กลับ จาก โรงเรียนรัตนราษฎร์บำรุง
+              <br />
+              จุดแข็งของผมความทุ่มเทให้กับสิ่งที่ชอบ เป็นคนที่ชอบหาประสบการณ์
+              ความรู้ และ เรียนรู้สิ่งใหม่ๆเสมอ <br />ความฝันของผมคือ การได้เป็น
+              DevOps ในบริษัท ด้านเทคโนโลยีที่มีความก้าวหน้า
+              <br />ผมหวังว่าข้อมูลข้างต้นจะทำให้ท่านสนใจผมมากขึ้นนะครับ 🙂
+            </p1>
+            <div class="tab-tittles">
+              <p class="tablinks activelink" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tablinks" onclick="opentab('activities')">Activities</p>
+              <p class="tablinks" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tabcontents activetab" id="skills">
+              <ul>
+                <li>
+                  <span>Programing</span><br >
+                  Basic: HTML ,CSS ,JS ,Python ,C ,C# ,C++
+                </li>
+
+                <li>
+                  <span>Web Development</span><br />
+                  <p1>Front - End Design</p1>
+                </li>
+
+                <li>
+                  <span>Game Developer</span><br />
+                  <p1>รับหน้าที่เป็น Programer และ Level design</p1>
+                </li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="activities">
+              <ul>
+                <li>
+                  <span>Build game: MyHoloMemorize</span>
+                  <br>ผมได้สร้างเกมที่มีชื่อว่า MyHoloMemorize ด้วยตัวคนเดียว และทำการนำไปลงบน itch.io
+                </li>
+                <li>
+                  <span
+                    >Arduino Sensor for apple tree</span
+                  >
+                  <br /> ทำเครื่องวัดความชื้นและอุณหภูมิ ภายในดินที่เหมาะสำหรับการปลูกต้นแอปเปิ้ล
+                </li>
+                <li>
+                  <span>Open-CV</span> <br >การนำ Data ที่ได้จาก Open-CV ให้ไปแสดงผลบน Node red
+                  
+                </li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="education">
+              <ul>
+                <li><span>Primary School</span><br />โรงเรียนอุดมวิทยา</li>
+                <li>
+                  <span>Junior High School</span
+                  ><br />โรงเรียนสาธิตแห่งมหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง
+                </li>
+                <li>
+                  <span>Senior High School</span><br />โรงเรียนรัตนราษฎร์บำรุง
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+    <!---------------------my project----------------->
+
+    <div id="myproject">
+      <div class="container">
+        <h1 class="sub">My Projects</h1>
+        <div class="myprojects">
+          <div class="project">
+            <img src="images/ปกweb.jpg" width="10" height="auto" />
+            <div class="layer">
+              <h4>Game Developer
+               <br /> "MyHoloMemorize" </h4>
+              <br>
+              <p>
+                กิจกรรมนี้เป็นการสร้างเกมครั้งแรกของผมเรียกได้ว่าเป็นการมุมมองใหม่ของผมที่มีต่อเกมเลยก็ว่าได้ ผมได้รู้ว่าการสร้างเกมนั้นไม่ง่ายเลย 
+                จำเป็นต้องใช้ทักษะในการวางแผน การคิดอย่างเป็นระบบ การสืบค้นข้อมูล และ ทักษะในการนำเสนอที่สูงมาก และสิ่งเหล่านี้คือทักษะที่ผมได้รับในการทำกิจกรรมนี้
+              </p>
+              <a href="https://kasidechglinpoglub.itch.io/myholomemorize" target="_blank">
+
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/GDD1.png" />
+            <div class="layer">
+              <h4>Game Design Document<br />"BioInvader"</h4>
+              <p>
+                การออกแบบ Design เกมอย่างเป็นระบบโดยนำ inspiration
+                จากเกมต่างๆมาใช้ ซึ่งมีวิธีดังนี้
+                1.Concept Game<br> 2.Game
+                setting <br>3.Gameplay <br>4.Levels Design <br>5.Asset ภายในตัวเกม
+              </p>
+              <a href="https://kasidechglinpoglub.github.io/GameDesignDocument/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Open-CV1.jpg" />
+            <div class="layer">
+              <h4>Open-CV</h4>
+              <p>
+                เป็นกิจกรรมที่ผมได้ลองทำ Image processing เป็นครั้งแรก ได้ทบทวนความรู้ภาษา Python การได้ลองติดตั้ง Node ต่างๆกิจกรรมนี้ทำให้ผมได้รับทักษะเพิ่มเติมมาหลายอย่าง 
+                เช่นการใช้ Github พื้นฐานการใช้ Node ต่างๆ เช้น Node red</p>
+              </p>
+              <a
+                href="https://github.com/KasidechGlinpoglub/Open-CV"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myproject">
+      <div class="container">
+        <div class="myprojects2">
+          <div class="project">
+            <img src="images/พราะราชดำริ.jpg" />
+            <div class="layer">
+              <h4>โครงการพระราชดําริ ในรัชกาลที่9
+              </h4>
+              <p>
+                เป็น Mini Project ในรายวิชา Basic Program ให้สร้าง website เกี่ยวกับพราะราชดำริ
+                ผมจึงใช้ HTML CSS และ JavaScript ในการสร้างครับ
+              </p>
+              <a href="https://kasidechglinpoglub.github.io/R9/"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Apple.jpg" />
+            <div class="layer">
+              <h4>Arduino Sensor for apple tree</h4>
+              <p>
+              ผมทำเครื่องวัด
+                ความชื้นและอุณหภูมิ ภายในดินที่เหมาะสำหรับการปลูกต้นแอปเปิ้ล(ความชื้นควรอยู่ที่ 60-90 อุณหภูมิควรน้อยกว่า 15 องศาเซลเซียส) โดยใช้ Arduino simulator จากทาง Website Tinkercad
+              </p>
+              <a href="https://www.tinkercad.com/things/cZeNpr9ixik-copy-of-soil-moisture-sensor/editel?sharecode=oMxrMypcETH4mjjrazZYtlkDUCVKzAarfGsZNh6uXZY&fbclid=IwAR3U5AjDJWYacaOsG1RYYYcUJs0glJ-ROxck-emB5QDgxMl8zJqPKJzgF0I"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/GJ3.jpg" />
+            <div class="layer">
+              <h4>Hameter Hub Game Jam 3</h4>
+              <p>  เป็นหัวหน้าทีมในการแข่งขันสร้างเกมในโครงการ HamsterHub Game Jam ครั้งที่ 3 ภายใต้โจทย์ Reflection
+                ให้เสร็จภายใน 5 วัน</p>
+              <a href="https://nightmare139.itch.io/half-of-life"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+    <div id="myproject">
+      <div class="container">
+   
+        <div class="myprojects">
+          <div class="project">
+            <img src="images/3d2.png" width="10" height="auto" />
+            <div class="layer">
+              <h4>สรุป 3D Printing</h4>
+              <br>
+              <p>
+               ผมได้ทำ Slide ในรายวิชาเทคโนโลยีร่วมสมัย ในหัวข้อ สรุป 3D Printing ใน 4 หน้า 
+              </p>
+              <a href="https://www.canva.com/design/DAFzBxeQRBc/kGXiqwemr36SpuOSwgGUDg/view?utm_content=DAFzBxeQRBc&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
+
+                <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/fire4.png" />
+            <div class="layer">
+              <h4>Arduino Sensor<br />"Fire Detection"</h4>
+              <p>ผมได้ทำเครื่องสัญญานเตือนภัย กรณีไฟไหม้ หากอุณหภูมิเกิน 70 องศาเซลเซียส เครื่องจะทำการเล่นเสียงบัซเซอร์โดยใช้ tone ด้วยความถี่ 800 Hz ในระยะเวลา 0.2วิ, จากนั้นพัก 0.2วิ, แล้วเล่นเสียงอีกครั้งด้วยความถี่ 600 Hz ในระยะเวลา 0.2วิ โดยใช้ Arduino simulator จากทาง Website Tinkercad
+              </p>
+              <a href="https://www.tinkercad.com/things/fkKJvLYncAi-fabulous-snaget-bombul/editel?sharecode=A77GIQ00AnfWVbdWC5loEFvy6G6E-LkCRpDj2WwjYqs" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/AMD.png" />
+            <div class="layer">
+              <h4>สรุป AMD Radeon RX 6000</h4>
+              <p>
+                ผมได้ทำ infographic ในรายวิชาเทคโนโลยีร่วมสมัย ในหัวข้อ สรุป AMD Radeon RX 6000</p>
+              </p>
+              <a
+                href="https://www.canva.com/design/DAFZ8oH3Eh8/1uAXUPzZdQjzkjHCQcpOMQ/view?utm_content=DAFZ8oH3Eh8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myproject">
+      <div class="container">
+        <div class="myprojects2">
+          <div class="project">
+            <img src="images/job.png" />
+            <div class="layer">
+              <h4>สรุปอาชีพ DevSecOps
+              </h4>
+              <p>
+                ผมได้ทำ infographic ในรายวิชาการงานในหัวข้อ สรุป อาชีพที่ไม่คิดว่าจะมีในโลก
+              </p>
+              <a href="https://www.canva.com/design/DAFX5CVKI3I/Bj0hpVdrvSHa7PMCpCb9kQ/view?utm_content=DAFX5CVKI3I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Help2.png" />
+            <div class="layer">
+              <h4>Arduino Sensor for apple tree</h4>
+              <p>
+                ผมได้ช่วยเพื่อนที่เรียน ปวช.ปี3 Design แบบจำลองการศึกษา โดยทำเป็นอุปกรณ์แยกขยะตามประเภทของวัสดุ 
+                และจะนำมาแปรรูปเพื่อให้เกิดประโยชน์
+                เช่น การคัดแยกขยะพลาสติก กับ ขยะอลูมิเนียม ออกจากกัน
+                แล้วนำขยะอลูมิเนียมไปทำความสะอาด และทำการส่งต่อให้กับ
+                มูลนิธิขาเทียม
+              </p>
+              <a href="https://www.canva.com/design/DAF0HWQ3w4I/Ii8xJJWX8WoZcra-JPXjXw/view?utm_content=DAF0HWQ3w4I&utm_campaign=designshare&utm_medium=link&utm_source=editor"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Cal5.png" />
+            <div class="layer">
+              <h4>Calculator</h4>
+              <p>  ผมได้สร้างเครื่องคิดเลขจากการเขียน HTML CSS และ JavaScript ที่สามารถใช้งานได้จริง สามารถขึ้นแสดงประวัติคำตอบของการคิดเลขในแต่ละรอบไว้อย่างเป็นระบบ</p>
+              <a href="https://kasidechglinpoglub.github.io/Calculator/"target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/KasidechGlinpoglub" target="_blank" class="btn">Discover more</a>
+      </div>
+    </div>
+    
+    <!-----------------------contact section----------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contactleft">
+            <h1 class="sub" style="color: #000000;">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope" style="color: black;"></i><span style="color: #000000;">KasidechGlinpoglub@gmail.com</span></p>
+            <p><i class="fa-solid fa-square-phone" style="color: black;"></i><span style="color: #000000;">090-920-3249</span></p>
+            <div class="socialmedia">
+              <a
+                href="https://www.facebook.com/profile.php?id=100027037747320&viewas=&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://github.com/KasidechGlinpoglub" target="_blank">
+                <i class="fa-brands fa-github-square"></i
+              ></a>
+            </div>
+            <div class="socialmedia">
+              <a
+                href="https://www.facebook.com/profile.php?id=100027037747320&viewas=&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true"
+                target="_blank"></a><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://github.com/KasidechGlinpoglub" target="_blank">
+                <i class="fa-brands fa-github-square"></i
+              ></a>
+          
+          
+          
+            <div id="contact">
+              <!-- ส่วนอื่น ๆ ของเนื้อหาของเพจ -->
+          </div>
+          
+          <div class="footer">
+              <p>Copyright © 2023 Kasidech Glinpoglub All Rights Reserved.</p>
+          </div>
+          <script>
+          var tablinksa = document.getElementsByClassName("tablinks");
+          var tabcontentsa = document.getElementsByClassName("tabcontents");
+          
+          function opentab(tabname) {
+            for (tablink of tablinksa) {
+              tablink.classList.remove("activelink");
+            }
+            for (tabcontent of tabcontentsa) {
+              tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+          }
+          </script>
+          <script>
+          var sidemenu = document.getElementById("sidemenu");
+          function openmenu() {
+            sidemenu.style.right = "0";
+          }
+          function closemenu() {
+            sidemenu.style.right = "-200px";
+          }
+          </script>
+          
+          <form name="submit-to-google-sheet"></form>
+          
+         
+          <script>
+          // Add click event listeners to all anchor tags with href attributes
+          const links = document.querySelectorAll('a[href^="#"]');
+          links.forEach((link) => {
+            link.addEventListener("click", scrollToSection);
+          });
+          
+          // Scroll to the section associated with the clicked link
+          function scrollToSection(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const targetId = event.currentTarget.getAttribute("href").substring(1); // Get the target section's ID
+            const targetSection = document.getElementById(targetId); // Get the target section element
+            if (targetSection) {
+              targetSection.scrollIntoView({ behavior: "smooth" }); // Scroll smoothly to the target section
+            }
+          }
+</script>
+   
+  </body>
+</html>
